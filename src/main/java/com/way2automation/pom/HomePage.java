@@ -38,6 +38,9 @@ public class HomePage extends BasePage implements AutoConstant {
 	
 	@FindBy(xpath="//img[@alt='dropdown']")
 	private WebElement DropDownPage;
+	
+	@FindBy(xpath="//img[@alt='frames-and-windows']")
+	private WebElement FramesandWindowPage;
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -77,6 +80,12 @@ public class HomePage extends BasePage implements AutoConstant {
 		DropDownPage.click();
 	}
 
+	public void clickOnFramesandWindows() {
+		FramesandWindowPage.click();
+	}
+	
+	
+	
 	public void changeWindow() {
 		Set<String> windows = driver.getWindowHandles();
 		Iterator<String> it = windows.iterator();

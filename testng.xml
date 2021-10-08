@@ -3,7 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.facebook.test.FacebookTest"/>
+      <class name="com.sway2automation.test.FramesandWindowsTest"/>
+      <class name="com.sway2automation.test.RegistrationTest"/>
+      <class name="com.sway2automation.test.DropdownTest"/>
+      <class name="com.sway2automation.test.AlertTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
